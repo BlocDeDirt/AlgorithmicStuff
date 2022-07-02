@@ -1,0 +1,33 @@
+header{
+    min-height: 100px;
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--brown);
+    font-size: 30px;
+    background-color: var(--darkBrown);
+    padding: 5px 10px;
+}
+
+.container{
+    width: 250px;
+    margin: 10px auto;
+}
+
+a > div{
+    margin: 3px;
+    background-color: gray;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+a > div:hover{
+    background-color: rgb(90, 90, 90);
+}

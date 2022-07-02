@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssReset.css">
+    <link rel="stylesheet" href="gameOfLife.css">
+    <title>Game of life</title>
+</head>
+<body>
+    <header>
+        <h1>Game of life</h1>
+    </header>
+
+    <div class="containerSelectionElement">
+        <div>
+            <button class="element" id="nextButton">NEXT</button>
+            <button class="element" id="playButton">PLAY</button>
+            <button class="element" id="pauseButton">PAUSE</button>
+            <button class="element" id="resetButton">RESET</button>
+            <h4 class="generationCounter">Génération : 0</h4>
+        </div>
+    </div>
+
+    <div class="containerTable">
+        <table id="table">
+        </table>
+    </div>
+</body>
+<script src="gameOfLifeScript.js"></script>
+</html>

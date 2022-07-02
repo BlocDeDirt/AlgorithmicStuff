@@ -1,0 +1,81 @@
+header{
+    min-height: 100px;
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--brown);
+    font-size: 30px;
+    background-color: var(--darkBrown);
+    padding: 5px 10px;
+}
+
+.containerSelectionElement{
+    width: 900px;
+    margin: 5px auto;
+}
+
+.containerSelectionElement > div{
+    display: flex;
+    align-items: center;
+}
+
+.element{
+    box-shadow: 0 4px #6a6969;
+    color: rgb(30, 30, 30);
+    background-color: rgb(129, 129, 129);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all .1s ease;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-style: none;
+    outline: none;
+    margin: 0 2px;
+}
+
+.element:active{
+    box-shadow: 0 1px #6a6969;
+    transform: translateY(3px);
+}
+
+.generationCounter{
+    margin: 0 0 0 auto;
+    font-size: 15px;
+}
+
+.containerTable{
+    width: 900px;
+    margin: 0 auto 10px auto;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-clip: padding-box;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 30px;
+    height: 30px;
+}
+
+.cellOn{
+    background-color: var(--black);
+}

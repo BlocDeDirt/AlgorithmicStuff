@@ -1,0 +1,152 @@
+header{
+    min-height: 100px;
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--brown);
+    font-size: 30px;
+    background-color: var(--darkBrown);
+    padding: 5px 10px;
+}
+
+.containerTable{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.containerSelectionElement{
+    width: 900px;
+    margin: 5px auto;
+}
+
+.containerSelectionElement > div{
+    display: flex;
+    align-items: center;
+}
+
+.element{
+    box-shadow: 0 4px #6a6969;
+    color: rgb(30, 30, 30);
+    background-color: rgb(129, 129, 129);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all .1s ease;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-style: none;
+    outline: none;
+    margin: 0 2px;
+}
+
+.element.active{
+    box-shadow: 0 1px #6a6969;
+    transform: translateY(3px);
+}
+
+.startPosition{
+    background-color: orange;
+    box-shadow: 0 4px rgb(193, 125, 0);
+}
+.startPosition.active{
+    box-shadow: 0 1px rgb(193, 125, 0);
+}
+
+.endPosition{
+    background-color: orangered;
+    box-shadow: 0 4px rgb(197, 52, 0);
+}
+
+.endPosition.active{
+    box-shadow: 0 1px rgb(197, 52, 0);
+}
+
+.startButton{
+    box-shadow: 0 4px rgb(0, 70, 11);
+    color: rgb(30, 30, 30);
+    background-color: rgb(5, 141, 25);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all .1s ease;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-style: none;
+    outline: none;
+}
+
+.startButton:active{
+    box-shadow: 0 1px rgb(0, 70, 11);
+    transform: translateY(3px);
+}
+
+.resetButton{
+    box-shadow: 0 4px rgb(50, 80, 150);
+    color: rgb(30, 30, 30);
+    background-color: rgb(76, 124, 236);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all .1s ease;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-style: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: 3px;
+}
+
+.resetButton:active{
+    box-shadow: 0 1px rgb(50, 80, 150);
+    transform: translateY(3px);
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-clip: padding-box;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.visited{
+    background-color: var(--brown);
+}
+
+.pathSolution{
+    background-color: rgb(55, 112, 148);
+}
+
+.wall{
+    background-color: var(--black);
+}
+
+.start{
+    background-color: orange;
+}
+
+.end{
+    background-color: orangered;
+}
